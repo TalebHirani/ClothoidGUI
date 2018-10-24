@@ -42,7 +42,7 @@ void MainWindow::addLine(double x0, double y0, double x1, double y1)
     int npts = 20;
     double dy = (y1-y0)/npts;
     double dx = (x1-x0)/npts;
-    for(int i = 0; i < npts; i++) {
+    for(int i = 0; i <= npts; i++) {
         addPoint(x0,y0);
         x0 = x0 + dx;
         y0 = y0 + dy;
